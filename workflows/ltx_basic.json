@@ -1,0 +1,28 @@
+{
+  "last_node_id": 3,
+  "last_link_id": 2,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "CLIPTextEncode",
+      "pos": [200, 200],
+      "widgets_values": ["a cinematic shot of a futuristic city at sunset"]
+    },
+    {
+      "id": 2,
+      "type": "LTXVSampler",
+      "pos": [500, 200],
+      "widgets_values": [16, 512, 512]
+    },
+    {
+      "id": 3,
+      "type": "SaveVideo",
+      "pos": [800, 200],
+      "widgets_values": ["output.mp4"]
+    }
+  ],
+  "links": [
+    [1, 0, 2, 0],
+    [2, 0, 3, 0]
+  ]
+}
